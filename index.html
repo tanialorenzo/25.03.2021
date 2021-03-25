@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input:focus{
+        background-color: rgba(173, 216, 230, 0.432);
+    }
+    :target{
+        background-color: lightcoral;
+        color: white;
+    }
+    /* p:last-child{
+        background-color: #3ba1a6;
+    } */
+    /* p:only-child{
+        background-color: lightcoral;
+    } */
+    /* p:nth-child(3){
+        background-color: lightgreen;
+    } */
+    /* este cuenta de abajo a arriba y sin el last de arriba a abajo :) */
+    /* p:nth-last-of-type(3){
+        background-color: lightgreen;
+    } */
+    /*  */
+    p:first-of-type{
+        background: #00a5a7;
+    }
+    nav a:last-of-type:hover{
+        padding: 5px 10px;
+        border: 1px solid blue;
+        border-radius: .5em;
+        background-color: lightseagreen;
+        color: white;
+    }
+    nav a:last-of-type{
+        padding: 5px 10px;
+        border: 1px solid blue;
+        border-radius: .5em;
+        /* background-color: lightseagreen; */
+        /* color: white; */
+    }
+</style>
+<body>
+    <form action="#" method="get">
+        <input type="text" name="Correo" placeholder="Mi correo">
+        <input type="text" name="Telefono" placeholder="Teléfono">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+    <nav>
+        <a href="#seccion1">seccion1</a>
+        <a href="#seccion2">seccion2</a>
+        <a href="#seccion3">seccion3</a>
+    </nav>
+
+    <div id="seccion1">Mostrar la información Sección1</div>
+    <div id="seccion2">Mostrar la información Sección2</div>
+    <div id="seccion3">Mostrar la información Sección3</div>
+
+    <!-- <p>A este párrafo SI le afecta puesto que es hijo del nodo padre body</p>
+
+    <h1>Bienvenido a mi web</h1>
+    <p> A este párrafo NO le afecta puesto que h1 no tiene ítem considerados como hijos</p>
+    <div>
+        <a href="pepito.com">Vínculo</a>
+        <p>A este párrafo NO le afecta puesto que el primer nodo hijo dentro del div es un vínculo con ´a</p>
+    </div>
+
+    <div>
+        <p>A este párrafo SI le afecta</p>
+        <p>A este párrafo NO le afecta</p>
+    </div>
+
+    <div>
+        <p>EL ÚNICO</p>
+    </div> -->
+
+    <div>
+        <p>el primero</p>
+        <p>el segundo</p>
+        <p>el tercero</p>
+        <p>el cuarto</p>
+        <p>el quinto</p>
+    </div>
+
+    <h1>WEB DE EJEMPLOS</h1>
+    <p>Primer párrafo dentro de body. Si le afecta.</p>
+    <p>Segundo párrafo dentro de body. No le afecta.</p>
+    <p>Tercer párrafo dentro de body. No le afecta.</p>
+    <p>Cuarto párrafo dentro de body. No le afecta.</p>
+
+    <div>
+        <p>Primer párrafo dentro de div. Si le afecta.</p>
+        <p>Segundo párrafo dentro de div. No le afecta.</p>
+    </div>
+
+
+</body>
+</html>
